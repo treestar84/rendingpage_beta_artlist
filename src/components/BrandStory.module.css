@@ -1,0 +1,62 @@
+.section {
+    padding: 6rem 2rem;
+    background-color: #080808;
+    border-top: 1px solid #222;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+}
+
+.brandTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #fff 0%, #888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.brandDesc {
+    color: #aaa;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.meaning {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.divider {
+    width: 1px;
+    height: 80px;
+    background: #333;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .divider {
+        width: 80%;
+        height: 1px;
+    }
+}
